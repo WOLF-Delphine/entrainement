@@ -331,23 +331,113 @@ Ne jamais écrire « Marie » ou « 36 » directement : tout doit être calculé
 //console.log(nombre % 2);
 
 //17. Demande l'âge et affiche « majeur » ou « mineur ».
-const age = Number(prompt("Quel est votre âge?"));
-if (age < 18) {
-  alert("Vous êtes mineur");
-} 
-else {
-  alert("Vous êtes majeur");
-}
+//const age = Number(prompt("Quel est votre âge?"));
+//if (age < 18) {
+//alert("Vous êtes mineur");
+//}
+//else {
+//alert("Vous êtes majeur");
+//}
 
 //18. Demande un prénom. Si l'utilisateur ne tape rien ou clique sur Annuler, affiche « Bonjour inconnu », sinon « Bonjour » + prénom avec une majuscule.
-//19. Demande un mot de passe et affiche « trop court » s'il fait moins de 8 caractères, sinon « accepté ».
-//20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
-//21. Demande un nombre et indique s'il est divisible par 3, par 5, par les deux ou par aucun.
-//22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat. Si l'utilisateur veut diviser par 0, affiche un message d'erreur.*/
+//const prenomComplet = prompt("Veuillez indiquer votre prénom.");
 
-/*
-Étape 4 : les fonctions (exercices 23 à 30)
-Rappel. Une fonction est une recette qu'on écrit une fois et qu'on réutilise :
+//if (prenomComplet === null) {
+//alert("Bonjour inconnu");               // Annuler
+//} else {
+//const prenomCompletPropre = prenomComplet.trim();
+//const premiereLettre = prenomCompletPropre.slice(0, 1);
+//const lettreMaj = premiereLettre.toUpperCase();
+//const prenomReste = prenomCompletPropre.slice(1);
+//const prenomResteMin = prenomReste.toLocaleLowerCase();
+//const prenomReconstitution = lettreMaj + prenomResteMin;
+
+//if (prenomReconstitution === "") {
+//alert("Bonjour inconnu");             // OK sans rien taper
+//} else {
+//alert("Bonjour " + prenomReconstitution);
+//}
+//}
+
+//19. Demande un mot de passe et affiche « trop court » s'il fait moins de 8 caractères, sinon « accepté ».
+//const motPasse = prompt("Quel est votre mot depasse?");
+
+//if (motPasse === null) {
+//alert("Aucun mot de passe saisi");
+//} else {
+//const motPasseNettoye = motPasse.trim();
+//const compteLettre = motPasseNettoye.length;
+//console.log("nombre de lettre: " + compteLettre);
+
+//if (compteLettre < 8) {
+//alert("Trop court");
+//} else {
+//alert("Accepté");
+//}
+//}
+
+//20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
+//const note = Number(prompt("Donne-moi une note sur 20"));
+
+//if (note < 10) {
+//alert("Insuffisant");
+//} else if (note <= 15) {
+//alert("Bien");
+//} else {
+//alert("Très bien");
+//}
+
+//21. Demande un nombre et indique s'il est divisible par 3, par 5, par les deux ou par aucun.
+//const nombre = Number(prompt("Donnez-moi un nombre"));
+
+//if (nombre % 3 === 0 && nombre % 5 === 0) {
+//alert("Votre nombre est divisible par 3 et par 5");
+//} else if (nombre % 3 === 0) {
+//alert("Votre nombre est divisible par 3");
+//} else if (nombre % 5 === 0) {
+//alert("Votre nombre est divisible par 5");
+//} else {
+// alert("Votre nombre n'est divisible ni par 3 ni par 5");
+//}
+
+//22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat.
+// Si l'utilisateur veut diviser par 0, affiche un message d'erreur.*/
+
+const premierNombre = Number(prompt("Premier nombre"));
+const secondNombre = Number(prompt("Second nombre"));
+const operation = prompt("Choisissez votre opérateur");
+switch (operation) {
+  case "+":
+    const addition = premierNombre + secondNombre;
+    console.log(addition);
+    break;
+  case "-":
+    const soustraction = premierNombre - secondNombre;
+    console.log(soustraction);
+    break;
+  case "*":
+    const multiplication = premierNombre * secondNombre;
+    console.log(multiplication);
+    break;
+  case "/":
+    if (secondNombre === 0) {
+      alert("Erreur division par 0 impossible!");
+    } else {
+      const division = premierNombre / secondNombre;
+      console.log(division);
+    }
+    break;
+
+  default:
+    alert("Vous n'avez pas donner d'opérateur mathématique");
+
+}
+
+/*-------------------------------------------------------------------------------------------------------- */
+
+//Étape 4 : les fonctions (exercices 23 à 30)
+/*-------------------------------------------------------------------------------------------------------- */
+/*Rappel. Une fonction est une recette qu'on écrit une fois et qu'on réutilise :
 function direBonjour(prenom) {
   return "Bonjour " + prenom;
 }

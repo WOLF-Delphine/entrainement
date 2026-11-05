@@ -8,7 +8,7 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 | 2 | Maths et modulo (exercices 9 à 15) | ✅ fait |
 | 3 | Projet : Billet de train (dossier `Train/`) | ✅ fait |
 | 4 | Projet : Réservation de cinéma (dossier `Cinema/`) | ✅ fait |
-| 5 | Les conditions (exercices 16 à 22) | ⏭️ prochaine étape |
+| 5 | Les conditions (exercices 16 à 22) | 🔄 en cours : 16 à 21 faits, 22 presque fini ; entraînements A à F sur l'ordre des conditions à faire |
 | 6 | Projet : Bulletin de notes (dossier `Bulletin/`) — HTML + CSS + conditions | à faire |
 | 7 | Les fonctions (exercices 23 à 30) | à faire |
 | 8 | Projet : Médiathèque (dossier `Mediatheque/`) — HTML + CSS + fonctions | à faire |
@@ -397,4 +397,17 @@ Une page complète qui utilise **tout** ce qui a été vu : HTML, CSS (nav `stic
 
 - **Outils Math** : quand utiliser `%`, `Math.floor`, `Math.ceil`, `Math.round` ; découvrir `Math.random`.
 - **`Number()`** : `Number(` doit toucher directement la variable texte, avant le calcul.
+- **`if` dans un `if` (à retravailler, vu à l'exercice 18)** : on vérifie d'abord ce qui ferait planter (`null`), et on met tout le reste du travail (variables comprises) dans le `else`. Refaire l'exercice 18 de mémoire, puis l'appliquer à l'exercice 19 (Annuler sur le mot de passe) et à l'exercice 22 (diviser seulement si le nombre n'est pas 0).
+- **L'ordre des conditions (à retravailler, vu à l'exercice 21)** : avec `else if`, JavaScript lit de haut en bas et **s'arrête à la première condition vraie**. Donc : le cas le plus précis en premier, le `else` (sans condition) en dernier. Exercices ci-dessous, du plus facile au plus dur :
+  - **A. Je lis, je prédis.** Sans lancer le code, écris ce qu'il affiche pour 5, 12, 16 et 20. Puis lance-le et compare. Qu'est-ce qui ne va pas ?
+    ```js
+    if (note >= 10) { alert("bien"); }
+    else if (note >= 16) { alert("très bien"); }
+    else { alert("insuffisant"); }
+    ```
+  - **B. Trouve le bug.** Dans l'exercice 21, si on met le bloc « par 3 et par 5 » en dernier (avant le `else`), quels nombres entre 1 et 30 donnent un mauvais résultat ? Fais la liste à la main.
+  - **C. Remets dans l'ordre.** Tarif cinéma : moins de 12 ans → 5 € ; 65 ans et plus → 6 € ; étudiant (`etudiant === "oui"`) → 7 € ; sinon → 10 €. Un enfant de 10 ans étudiant paie 5 €. Écris les conditions dans le bon ordre et teste 10 ans étudiant, 20 ans étudiant, 70 ans, 40 ans.
+  - **D. Les tranches.** Demande un âge : moins de 3 → « bébé » ; moins de 12 → « enfant » ; moins de 18 → « ado » ; moins de 65 → « adulte » ; sinon « senior ». Teste chaque limite (2, 3, 11, 12, 17, 18, 64, 65).
+  - **E. Dans l'autre sens.** Refais D en commençant par les plus âgés (`>= 65`, puis `>= 18`…). Les deux ordres marchent : pourquoi ? Et qu'arrive-t-il si on mélange (`< 12` puis `>= 65` puis `< 3`) ?
+  - **F. `&&` puis `||`.** Livraison : total de 50 € ou plus **et** client membre → « gratuite » ; total de 50 € ou plus **ou** client membre → « 2 € » ; sinon → « 5 € ». Teste les 4 combinaisons (60 € membre, 60 € non membre, 30 € membre, 30 € non membre). Que se passe-t-il si on inverse les deux premiers blocs ?
 - **« Je lis, je prédis »** : lire quelques lignes de code et écrire, sans les lancer, ce que contient chaque variable, puis vérifier avec la console.
