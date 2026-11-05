@@ -1,5 +1,5 @@
-/*----------------------------------------------------------------------------------------------------- */                              
-                            // Étape 1 : variables et texte (exercices 1 à 8)
+/*----------------------------------------------------------------------------------------------------- */
+// Étape 1 : variables et texte (exercices 1 à 8)
 /*------------------------------------------------------------------------------------------------------*/
 //Rappel. let crée une variable qui peut changer, const une variable fixe. prompt() pose une question et renvoie toujours du texte. alert() affiche un message, console.log() écrit dans la console.
 //Méthodes utiles : toUpperCase(), toLowerCase(), slice(), charAt(), trim(), length.*/
@@ -10,32 +10,29 @@
 //let surname="Delphine";
 //console.log(surname);
 
-
 //------------------------------------------------------------------------------------------------------
 //2. Demande le prénom de l'utilisateur avec prompt et affiche « Bonjour » + prénom dans une alerte.
 
 //const demande= prompt ("Quel est ton prénom?");
 //console.log(demande);
 //alert("Bonjour" + " " + demande);
-  
 
 //---------------------------------------------------------------------------------------------------------
 //3. demande le prénom, puis affiche « Bonjour Prénom » avec seulement la première lettre en majuscule (même si l'utilisateur tape « bERTRAND»).
 
 //Je crée une variable qui contient un prompt qui demande le prénom
-//const question = prompt("Quel est votre prénom ?");     
-// Je crée une variable qui récupere la 1ere lettre majuscule   
-//let majuscule =  question.slice(0,1).toUpperCase();   
-//console.log(majuscule);     
+//const question = prompt("Quel est votre prénom ?");
+// Je crée une variable qui récupere la 1ere lettre majuscule
+//let majuscule =  question.slice(0,1).toUpperCase();
+//console.log(majuscule);
 // Je crée une variable qui récupére les lettres minuscules
-//let minuscule = question.slice(1).toLowerCase();                           
-//Je crée une variable pour stocker le résultat   
-//console.log(minuscule);                   
+//let minuscule = question.slice(1).toLowerCase();
+//Je crée une variable pour stocker le résultat
+//console.log(minuscule);
 //let prenomModif= majuscule + minuscule;
-//console.log(prenomModif);   
-//Je crée une variable contenant une alerte qui reconstitut let affiche la réponse (Maj-Min)                                           
-//alert("Bonjour"+" "+ prenomModif); 
-
+//console.log(prenomModif);
+//Je crée une variable contenant une alerte qui reconstitut let affiche la réponse (Maj-Min)
+//alert("Bonjour"+" "+ prenomModif);
 
 //-------------------------------------------------------------------------------------------------------
 //4. Demande le prénom et le nom. Affiche « Bonjour Prénom NOM » : prénom avec une majuscule, nom tout en majuscules.
@@ -59,14 +56,12 @@
 //console.log(nomFinal);
 //alert("Bonjour"+ " " + prenomFinal +" "+ nomFinal);
 
-
 //----------------------------------------------------------------------------------------------------------
 //5. Demande un mot et affiche son nombre de lettres
 
 //const mot = prompt("Donne-moi un mot");
 //const nombreLettre = mot.length;
 //alert("le mot que tu as choisi contient"+ " " + nombreLettre + " " +"lettres");
-
 
 //---------------------------------------------------------------------------------------------------------
 //6. Demande un mot et affiche sa première et sa dernière lettre.
@@ -77,7 +72,6 @@
 //const premiereLettre = mot.slice(0,1);
 //const derniereLettre = mot.slice(nombreLettre-1,nombreLettre);
 //alert("La premiére lettre de votre mot est "+premiereLettre.toUpperCase()+" la derniére lettre de votre mot est "+ derniereLettre.toUpperCase());
-
 
 //-------------------------------------------------------------------------------------------------------
 //7. Demande un prénom, enlève les espaces en trop avec trim(), puis mets la première lettre en majuscule.
@@ -96,7 +90,6 @@
 //console.log(majuscule);
 //alert("Votre prénom est "+ majuscule + reste);
 
-
 //--------------------------------------------------------------------------------------------------------
 //8. Demande un prénom et un nom, et affiche les initiales (« marie dupont » donne « M.D. »).
 
@@ -111,10 +104,8 @@
 //const deuxiemeLettre = nom.slice(0,1).toUpperCase();
 //alert("Les initiales sont: " + premiereLettre + "."+ deuxiemeLettre);
 
-
-
 /*------------------------------------------------------------------------------------------------------- */
-                                //Étape 2 : maths et modulo (exercices 9 à 15)
+//Étape 2 : maths et modulo (exercices 9 à 15)
 /*--------------------------------------------------------------------------------------------------------*/
 /*
 Rappel. Les opérateurs : +, -, *, /, ** (puissance) et % (modulo = le reste d'une division : 10 % 3 vaut 1). Comme prompt renvoie du texte, "5" + "3" donne "53" : convertis avec Number().
@@ -128,7 +119,6 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 //const somme = Number(premierNombre) + Number(deuxiemeNombre);
 //alert(somme);
 
-
 //--------------------------------------------------------------------------------------------------------
 //10. Demande deux nombres et affiche dans une seule alerte le résultat des 4 opérations.
 
@@ -137,11 +127,9 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 //const division = Number(premierNombre) / Number(deuxiemeNombre);
 //const multiplication = Number(premierNombre) * Number(deuxiemeNombre);
 //alert(premierNombre+ "+" +deuxiemeNombre +" est égale à " + addition +" , "+
-    //premierNombre+ "-" +deuxiemeNombre +" est égale à " + soustraction +" , "+ 
-    //premierNombre+ "*" + deuxiemeNombre +" est égale à " + multiplication+" , "+ 
+//premierNombre+ "-" +deuxiemeNombre +" est égale à " + soustraction +" , "+
+//premierNombre+ "*" + deuxiemeNombre +" est égale à " + multiplication+" , "+
 //premierNombre+ "/" + deuxiemeNombre +" est égale à " + division);
-
-
 
 //--------------------------------------------------------------------------------------------------------
 //11. Demande l'année de naissance et affiche « Prénom, tu as X ans » (le prénom avec une majuscule, comme à l'étape 1).
@@ -158,7 +146,6 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 //premiereLettre= premiereLettre.toUpperCase();
 //console.log(premiereLettre);
 
-
 //let reste = nettoyage.slice(1);
 //console.log(reste);
 //reste= reste.toLowerCase();
@@ -167,7 +154,6 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 //const calculAge = 2026 - anneeNaissance ;
 //console.log(calculAge);
 //alert("Bonjour " + premiereLettre + reste + ", actuellement tu as " + calculAge + " ans");
-
 
 //-------------------------------------------------------------------------------------------------------
 //12. Demande un prix et affiche le prix après 20 % de réduction, avec 2 chiffres après la virgule.
@@ -179,7 +165,6 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 
 //const prixFinal = (prixInitial - reduction).toFixed(2);
 //console.log("Le prix à payé aprés réduction est de:  " + prixFinal)
-
 
 //-------------------------------------------------------------------------------------------------------
 //13. Demande deux nombres et affiche le quotient entier et le reste (17 et 5 donnent « 3, reste 2 »).
@@ -199,7 +184,6 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 //console.log(decimale);
 //alert("La partie entiére du résultet est : " + quotient + " ,le reste est de " + decimale);
 
-
 //-----------------------------------------------------------------------------------------------------
 //14. Demande un nombre de minutes et convertis-le en heures et minutes (135 donne « 2 h 15 min »).
 
@@ -213,7 +197,7 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 
 //-----------------------------------------------------------------------------------------------------
 //15. Demande un mot et affiche combien de fois il faudrait le répéter pour arriver à au moins 20 lettres (utilise length et Math.ceil(), l'arrondi vers le haut).
-        
+
 //const mot =prompt("Donnez moi un mot");
 //console.log(mot);
 //const motPropre = mot.trim();
@@ -225,10 +209,9 @@ Méthodes utiles : Math.floor() (arrondi vers le bas), Math.round(), toFixed(2).
 
 //alert ("Résultat du calcul "+ resultat +" Pour arriver à au moins 20 lettres, il faudrait répéter le mot "+ motPropre + " " + verification + " fois")
 
-
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                              /*EXERCICE JAVASCRIPT - CSS - HTML */
+/*EXERCICE JAVASCRIPT - CSS - HTML */
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Exercice de révision : le billet de train
@@ -325,34 +308,42 @@ Pas de prompt ni d'alert.
 Ne jamais écrire « Marie » ou « 36 » directement : tout doit être calculé à partir des données.
 */
 
-
-
 /*-------------------------------------------------------------------------------------------------------- */
-                                    //Étape 3 : les conditions (exercices 16 à 22)
+//Étape 3 : les conditions (exercices 16 à 22)
 /*-------------------------------------------------------------------------------------------------------- */
 //Rappel. Une condition exécute du code seulement si quelque chose est vrai :
 //let age = Number(prompt("Ton âge ?"));
 //if (age >= 18) {
-  //alert("Tu es majeur");
+//alert("Tu es majeur");
 //} else {
-  //alert("Tu es mineur");
+//alert("Tu es mineur");
 //}
 //Comparaisons : === (égal), !== (différent), >, <, >=, <=. Pour combiner : && (et), || (ou). On peut enchaîner avec else if.
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
 //16. Demande un nombre et indique s'il est pair ou impair (modulo !).
+//const nombre = Number(prompt("Donnez-moi un nombre."));
+//if (nombre % 2 === 0) {
+//alert("Le nombre est pair");
+//} else {
+//alert("Le nombre est impair");
+//}
+//console.log(nombre % 2);
+
 //17. Demande l'âge et affiche « majeur » ou « mineur ».
+const age = Number(prompt("Quel est votre âge?"));
+if (age < 18) {
+  alert("Vous êtes mineur");
+} 
+else {
+  alert("Vous êtes majeur");
+}
+
 //18. Demande un prénom. Si l'utilisateur ne tape rien ou clique sur Annuler, affiche « Bonjour inconnu », sinon « Bonjour » + prénom avec une majuscule.
 //19. Demande un mot de passe et affiche « trop court » s'il fait moins de 8 caractères, sinon « accepté ».
 //20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
 //21. Demande un nombre et indique s'il est divisible par 3, par 5, par les deux ou par aucun.
 //22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat. Si l'utilisateur veut diviser par 0, affiche un message d'erreur.*/
-
-
-
-
-
-
-
-
 
 /*
 Étape 4 : les fonctions (exercices 23 à 30)
@@ -371,10 +362,6 @@ prenom est un paramètre (la valeur qu'on donne à la fonction), return renvoie 
 29. Crée une fonction appreciation(note) qui renvoie « insuffisant », « bien » ou « très bien » (reprends l'exercice 20).
 30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
 */
-
-
-
-
 
 /*
 Étape 5 : incrémentation et boucles (exercices 31 à 40)
