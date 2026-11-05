@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billet de train</title>
+    <link rel="stylesheet" href="./billet.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="menu">
+        <li>Accueil</li>
+        <li>Vos trajets</li>
+        <li class="page-actuelle">Votre billet</li>
+      </ul>
+    </nav>
+
+    <header class="entete">
+      <h1 id="titre">Ligne d'Azur</h1>
+      <p>&laquo; La promesse d'un voyage réussi &raquo;</p>
+    </header>
+
+    <main>
+      <div class="billet">
+        <section>
+          <h2>VOTRE TRAJET</h2>
+
+          <div>
+            <span>Code gare de départ :</span>
+            <span class="important" id="codeGareDepart">?</span>
+          </div>
+
+          <div>
+            <span>Ville de départ :</span>
+            <span id="villeDepart">?</span>
+          </div>
+
+          <div>
+            <span>Code gare d'arrivée :</span>
+            <span class="important" id="codeGareArrivee">?</span>
+          </div>
+
+          <div>
+            <span>Ville d'arrivée :</span>
+            <span id="villeArrivee">?</span>
+          </div>
+
+          <div>
+            <span>Durée du trajet :</span>
+            <span id="dureeTrajet">?</span>
+          </div>
+        </section>
+
+        <hr class="separateur" />
+
+        <section>
+          <h2>PASSAGER</h2>
+
+          <div>
+            <span>Nom :</span>
+            <span id="nom">?</span>
+          </div>
+
+          <div>
+            <span>Prénom :</span>
+            <span id="prenom">?</span>
+          </div>
+
+          <div>
+            <span>Initiales :</span>
+            <span id="initiales">?</span>
+          </div>
+
+          <div>
+            <span>Âge :</span>
+            <span id="age">?</span>
+          </div>
+
+          <div>
+            <span>Voiture :</span>
+            <span id="voiture">?</span>
+          </div>
+
+          <div>
+            <span>Place :</span>
+            <span id="place">?</span>
+          </div>
+
+          <div>
+            <span>Nombre de voyageur(s) :</span>
+            <span id="nombreVoyageur">?</span>
+          </div>
+        </section>
+
+        <hr class="separateur" />
+
+        <section>
+          <h2>PRIX</h2>
+
+          <div>
+            <span>Prix total :</span>
+            <span id="prixTotal">?</span>
+          </div>
+
+          <div>
+            <span>Réduction :</span>
+            <span id="reduction">?</span>
+          </div>
+
+          <div>
+            <span>À payer :</span>
+            <span class="important" id="aPayer">?</span>
+          </div>
+        </section>
+
+        <hr class="separateur" />
+
+        <footer>
+          <div>
+            <span>Zone référence :</span>
+            <span id="zoneReference">?</span>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="billet.js"></script>
+  </body>
+</html>

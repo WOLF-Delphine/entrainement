@@ -1,0 +1,75 @@
+/*Padding : Espace intérieur entre le contenu et la bordure d'un élément.
+Margin : Espace extérieur entre la bordure d'un élément et les éléments voisins (ou son parent)*/
+
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Variable CSS*/
+:root {
+  --couleur-ombre: #4c5c2d;
+  --couleur-body: #000000;
+  --couleur-carte: #fbfbfb;
+  --couleur-secondaire: #ffde42;
+}
+/*----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------*/
+nav {
+  background: var(--couleur-secondaire);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.listes {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+body {
+  background-color: var(--couleur-body);
+}
+section {
+  padding: 40px 16px 0 16px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--couleur-secondaire);
+  margin-bottom: 16px;
+}
+.boite-principale {
+  display: flex;
+  gap: 8px;
+}
+.carte {
+  background-color: var(--couleur-carte);
+  padding: 18px;
+  border-radius: 8px;
+}
+.billet {
+  border: 3px solid #4c4541;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  box-shadow: var(--couleur-ombre) 10px 10px;
+  background-color: var(--couleur-carte);
+}
+.billet div {
+  display: flex;
+  justify-content: space-between;
+}
+.propos p {
+  color: var(--couleur-carte);
+  max-width: 500px;
+  margin: 0 auto 16px auto;
+  line-height: 1.6;
+}
