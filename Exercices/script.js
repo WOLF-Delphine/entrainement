@@ -401,9 +401,9 @@ Ne jamais écrire « Marie » ou « 36 » directement : tout doit être calculé
 //}
 
 //22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat.
-// Si l'utilisateur veut diviser par 0, affiche un message d'erreur.*/
+// Si l'utilisateur veut diviser par 0, affiche un message d'erreur.
 
-const premierNombre = Number(prompt("Premier nombre"));
+/*const premierNombre = Number(prompt("Premier nombre"));
 const secondNombre = Number(prompt("Second nombre"));
 const operation = prompt("Choisissez votre opérateur");
 switch (operation) {
@@ -431,56 +431,122 @@ switch (operation) {
   default:
     alert("Vous n'avez pas donner d'opérateur mathématique");
 
-}
+}/*
 
 /*-------------------------------------------------------------------------------------------------------- */
-
 //Étape 4 : les fonctions (exercices 23 à 30)
 /*-------------------------------------------------------------------------------------------------------- */
 /*Rappel. Une fonction est une recette qu'on écrit une fois et qu'on réutilise :
 function direBonjour(prenom) {
   return "Bonjour " + prenom;
-}
-console.log(direBonjour("Marie")); // Bonjour Marie
+  /*console.log(direBonjour("Marie")); // Bonjour Marie
 prenom est un paramètre (la valeur qu'on donne à la fonction), return renvoie le résultat, et direBonjour("Marie") appelle la fonction.
-23. Crée une fonction doubler(nombre) qui renvoie le nombre multiplié par 2. Teste-la avec 3 valeurs.
-24. Crée une fonction additionner(a, b) qui renvoie la somme.
-25. Transforme l'exercice 3 en fonction majuscule(mot) qui renvoie le mot avec seulement la première lettre en majuscule. Utilise-la avec un prompt.
-26. Crée une fonction estPair(nombre) qui renvoie true ou false.
-27. Crée une fonction aireRectangle(longueur, largeur) et une fonction perimetreRectangle(longueur, largeur).
-28. Crée une fonction celsiusVersFahrenheit(c) (formule : c × 9 / 5 + 32).
-29. Crée une fonction appreciation(note) qui renvoie « insuffisant », « bien » ou « très bien » (reprends l'exercice 20).
-30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
-*/
+}
+/*--------------------------------------------------------------------------------------------------------*/
+//23. Crée une fonction doubler(nombre) qui renvoie le nombre multiplié par 2. Teste-la avec 3 valeurs.
+function doubler(nombre) {
+  return nombre * 2;
+}
+console.log(doubler(-3));
+console.log(doubler(10));
+console.log(doubler(4));
 
+//24. Crée une fonction additionner(a, b) qui renvoie la somme.
+
+function additionner(a, b) {
+  return a + b;
+}
+console.log(additionner(8, 104));
+
+//25. Transforme l'exercice 3 en fonction majuscule(mot) qui renvoie le mot avec seulement la première lettre en majuscule. Utilise-la avec un prompt.
+function majuscule(mot) {
+  const motNettoyage = mot.trim(" ");
+  const premiereLettreMot = motNettoyage.slice(0, 1);
+  const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
+  const resteMot = motNettoyage.slice(1);
+  const resteMotMin = resteMot.toLowerCase();
+  return premiereLettreMotMaj + resteMotMin;
+}
+console.log(majuscule("    guiLLaume"));
+//26. Crée une fonction estPair(nombre) qui renvoie true ou false.
+function estPair(nombre) {
+  if (nombre % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(estPair(26));
+console.log(estPair(7));
+
+//27. Crée une fonction aireRectangle(longueur, largeur) et une fonction perimetreRectangle(longueur, largeur).
+function aireRectangle(longueur, largeur) {
+  return longueur * largeur;
+}
+console.log(aireRectangle(6, 10));
+
+function perimetreRectangle(longueur, largeur) {
+  return (longueur + largeur) * 2;
+}
+console.log(perimetreRectangle(16, 32));
+
+//28. Crée une fonction celsiusVersFahrenheit(c) (formule : c × 9 / 5 + 32).
+function celsiusVersFahrenheit(c) {
+  return (c * 9) / 5 + 32;
+}
+console.log(celsiusVersFahrenheit(0));
+
+//29. Crée une fonction appreciation(note) qui renvoie « insuffisant », « bien » ou « très bien » (reprends l'exercice 20).
+//Rappel Exercice 20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
+function appreciation(note) {
+  if (note < 10) {
+    return "Insuffisant";
+  } else if (note <= 15) {
+    return "Bien";
+  } else {
+    return "Très bien";
+  }
+}
+console.log(appreciation(4));
+console.log(appreciation(13));
+console.log(appreciation(18));
+
+//30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
+function  presenter(prenom,nom,age){
+return "Je m'appelle "+ majuscule(prenom) +" " + nom.toUpperCase() +" et j'ai "+ age +" ans";
+}
+console.log(presenter("marie","durand",25));
+
+/*-------------------------------------------------------------------------------------------------------- */
 /*
 Étape 5 : incrémentation et boucles (exercices 31 à 40)
 Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la diminuer.
-let n = 5;
-n++;     // 6  (ajoute 1)
-n--;     // 5  (enlève 1)
-n += 10; // 15
-n -= 3;  // 12
-n *= 2;  // 24
-La boucle for répète un nombre de fois précis, la boucle while répète tant qu'une condition est vraie :
-for (let i = 1; i <= 5; i++) {
-  console.log(i); // 1, 2, 3, 4, 5
-}
+/*-------------------------------------------------------------------------------------------------------- */
+//let n = 5;
+//n++;     // 6  (ajoute 1)
+//n--;     // 5  (enlève 1)
+//n += 10; // 15
+//n -= 3;  // 12
+//n *= 2;  // 24
+//La boucle for répète un nombre de fois précis, la boucle while répète tant qu'une condition est vraie :
+//for (let i = 1; i <= 5; i++) {
+  //console.log(i); // 1, 2, 3, 4, 5
+//}
 
-let j = 3;
-while (j > 0) {
-  console.log(j); // 3, 2, 1
-  j--;
-}
-Attention : dans un while, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
-31. Crée une variable score = 0. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
-32. Affiche les nombres de 1 à 10 avec une boucle for, puis de 10 à 1.
-33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
-34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
-35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
-36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
-37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
-38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
-39. FizzBuzz : de 1 à 30, affiche « Fizz » si le nombre est divisible par 3, « Buzz » par 5, « FizzBuzz » par les deux, sinon le nombre.
-40. Le juste prix : l'ordinateur choisit un nombre entre 1 et 100 (Math.floor(Math.random() * 100) + 1). L'utilisateur propose des nombres avec prompt et l'alerte répond « plus grand » ou « plus petit ». À la fin, affiche « Bravo Prénom, trouvé en X essais » (compteur avec ++).
-*/
+//let j = 3;
+//while (j > 0) {
+ // console.log(j); // 3, 2, 1
+ // j--;
+//}
+//Attention : dans un while, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
+//31. Crée une variable score = 0. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
+//32. Affiche les nombres de 1 à 10 avec une boucle for, puis de 10 à 1.
+//33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
+//34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
+//35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
+//36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
+//37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
+//38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
+//39. FizzBuzz : de 1 à 30, affiche « Fizz » si le nombre est divisible par 3, « Buzz » par 5, « FizzBuzz » par les deux, sinon le nombre.
+//40. Le juste prix : l'ordinateur choisit un nombre entre 1 et 100 (Math.floor(Math.random() * 100) + 1). L'utilisateur propose des nombres avec prompt et l'alerte répond « plus grand » ou « plus petit ». À la fin, affiche « Bravo Prénom, trouvé en X essais » (compteur avec ++).
+//*/

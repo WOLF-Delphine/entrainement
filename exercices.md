@@ -14,6 +14,7 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 | 8 | Projet : Médiathèque (dossier `Mediatheque/`) — HTML + CSS + fonctions | à faire |
 | 9 | Incrémentation et boucles (exercices 31 à 40) | à faire |
 | 10 | Grand projet (HTML + CSS + conditions + fonctions) | à faire |
+| — | Bilan de fin de semaine n°1 : les conditions (exercices courts, méthode au choix) | à faire au prochain point |
 | — | Entraînements ciblés (Math, `Number()`, « je lis, je prédis ») | à glisser en échauffement |
 
 **Où écrire :** les petits exercices dans `script.js` (à la suite des exercices 1 à 15), chaque projet dans son propre dossier.
@@ -192,6 +193,8 @@ Les données, exactement comme ça :
 20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
 21. Demande un nombre et indique s'il est divisible par 3, par 5, par les deux ou par aucun.
 22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat. Si l'utilisateur veut diviser par 0, affiche un message d'erreur.
+
+**Le `switch` (découvert toute seule à l'exercice 22) :** quand une variable peut valoir plusieurs valeurs **précises**, le `switch` est plus lisible qu'une suite de `else if`. Chaque `case` se termine par `break`, et `default` gère « tous les autres cas ». Attention : tous les `case` partagent la même boîte, donc pas deux `const` avec le même nom. *(Exercices dans le bilan de fin de semaine, plus bas.)*
 
 **Bonus — corriger les cas limites de tes projets :**
 - **Cinéma, siège multiple de 12** : le siège 36 donne « place 0 ». Si le reste vaut 0, la place est 12.
@@ -390,6 +393,20 @@ Une page complète qui utilise **tout** ce qui a été vu : HTML, CSS (nav `stic
 | 🍕 Commande au restaurant | grille de plats + ticket de commande | livraison gratuite si plus de 30 € ; menu enfant si moins de 12 ans ; majoration après 22 h | `calculerTotal()`, `formaterPrix()` |
 | 🏋️ Abonnement salle de sport | grille des formules + fiche membre | tarif réduit si étudiant ou senior ; alerte si expiration dans moins de 7 jours ; niveau selon le nombre de séances | `calculerAge()`, `calculerPrixAbonnement()` |
 | 🚲 Location de vélos | grille des vélos + reçu de location | tarif horaire ou forfait journée ; caution si vélo électrique ; pénalité si retard | `convertirEnHeures()`, `calculerPrixLocation()` |
+
+---
+
+## Bilans de fin de semaine
+
+**Le principe :** des exercices **courts** (5 à 10 lignes chacun), sans consigne sur l'outil à utiliser. C'est toi qui **choisis ta méthode**, et tu écris en commentaire, au-dessus du code, **pourquoi** tu l'as choisie. Le but : vérifier que tu as compris, pas t'épuiser.
+
+### Bilan 1 : les conditions
+1. **Feu tricolore.** Demande une couleur (« rouge », « orange », « vert ») et affiche « stop », « ralentis » ou « passe ». Une autre couleur → « couleur inconnue ».
+2. **Week-end.** Demande un jour (« lundi », « Samedi »…) et affiche « jour de travail » ou « week-end ».
+3. **Musée.** Demande un âge : moins de 6 ans → gratuit ; moins de 18 ans → 5 € ; sinon → 8 €.
+4. **Saisons.** Demande un numéro de mois (1 à 12) et affiche la saison (12, 1, 2 → hiver ; 3, 4, 5 → printemps…). Un nombre en dehors de 1 à 12 → « mois inconnu ».
+5. **Nombre gagnant.** Demande un nombre : s'il est pair **et** plus grand que 50 → « gagné », sinon → « perdu ».
+6. **Question de réflexion (sans code).** Pourrais-tu faire l'exercice 3 avec un `switch` ? Pourquoi est-ce plus simple avec `else if` ?
 
 ---
 
