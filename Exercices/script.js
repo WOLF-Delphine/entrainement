@@ -460,7 +460,7 @@ console.log(additionner(8, 104));
 
 //25. Transforme l'exercice 3 en fonction majuscule(mot) qui renvoie le mot avec seulement la première lettre en majuscule. Utilise-la avec un prompt.
 function majuscule(mot) {
-  const motNettoyage = mot.trim(" ");
+  const motNettoyage = mot.trim();
   const premiereLettreMot = motNettoyage.slice(0, 1);
   const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
   const resteMot = motNettoyage.slice(1);
@@ -513,7 +513,11 @@ console.log(appreciation(18));
 
 //30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
 function  presenter(prenom,nom,age){
-return "Je m'appelle "+ majuscule(prenom) +" " + nom.toUpperCase() +" et j'ai "+ age +" ans";
+  const prenomPropre = prenom.trim();
+  const nomPropre = nom.trim().toUpperCase();
+  
+
+return "Je m'appelle "+ majuscule(prenomPropre) +" " + nomPropre +" et j'ai "+ age +" ans";
 }
 console.log(presenter("marie","durand",25));
 
