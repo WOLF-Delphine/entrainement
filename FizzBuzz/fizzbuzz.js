@@ -27,3 +27,4 @@ function fizzBuzz() {
   counter ++;
   console.log(output);
 }
+
