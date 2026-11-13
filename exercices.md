@@ -2,20 +2,20 @@
 
 Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à faire.
 
-| # | Partie | Statut |
-|---|---|---|
-| 1 | Variables et texte (exercices 1 à 8) | ✅ fait |
-| 2 | Maths et modulo (exercices 9 à 15) | ✅ fait |
-| 3 | Projet : Billet de train (dossier `Train/`) | ✅ fait |
-| 4 | Projet : Réservation de cinéma (dossier `Cinema/`) | ✅ fait |
-| 5 | Les conditions (exercices 16 à 22) | 🔄 en cours : 16 à 21 faits, 22 presque fini ; entraînements A à F sur l'ordre des conditions à faire |
-| 6 | Projet : Bulletin de notes (dossier `Bulletin/`) — HTML + CSS + conditions | à faire |
-| 7 | Les fonctions (exercices 23 à 30) | à faire |
-| 8 | Projet : Médiathèque (dossier `Mediatheque/`) — HTML + CSS + fonctions | à faire |
-| 9 | Incrémentation et boucles (exercices 31 à 40) | à faire |
-| 10 | Grand projet (HTML + CSS + conditions + fonctions) | à faire |
-| — | Bilan de fin de semaine n°1 : les conditions (exercices courts, méthode au choix) | à faire au prochain point |
-| — | Entraînements ciblés (Math, `Number()`, « je lis, je prédis ») | à glisser en échauffement |
+| #   | Partie                                                                            | Statut                                                                                                |
+| --- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | Variables et texte (exercices 1 à 8)                                              | ✅ fait                                                                                               |
+| 2   | Maths et modulo (exercices 9 à 15)                                                | ✅ fait                                                                                               |
+| 3   | Projet : Billet de train (dossier `Train/`)                                       | ✅ fait                                                                                               |
+| 4   | Projet : Réservation de cinéma (dossier `Cinema/`)                                | ✅ fait                                                                                               |
+| 5   | Les conditions (exercices 16 à 22)                                                | 🔄 en cours : 16 à 21 faits, 22 presque fini ; entraînements A à F sur l'ordre des conditions à faire |
+| 6   | Projet : Bulletin de notes (dossier `Bulletin/`) — HTML + CSS + conditions        | à faire                                                                                               |
+| 7   | Les fonctions (exercices 23 à 30)                                                 | à faire                                                                                               |
+| 8   | Projet : Médiathèque (dossier `Mediatheque/`) — HTML + CSS + fonctions            | à faire                                                                                               |
+| 9   | Incrémentation et boucles (exercices 31 à 40)                                     | à faire                                                                                               |
+| 10  | Grand projet (HTML + CSS + conditions + fonctions)                                | à faire                                                                                               |
+| —   | Bilan de fin de semaine n°1 : les conditions (exercices courts, méthode au choix) | à faire au prochain point                                                                             |
+| —   | Entraînements ciblés (Math, `Number()`, « je lis, je prédis »)                    | à glisser en échauffement                                                                             |
 
 **Où écrire :** les petits exercices dans `script.js` (à la suite des exercices 1 à 15), chaque projet dans son propre dossier.
 
@@ -25,7 +25,7 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 
 ## 1. Variables et texte (exercices 1 à 8) ✅
 
-> **Rappel.** `let` crée une variable qui peut changer, `const` une variable fixe. `prompt()` pose une question et renvoie toujours du texte. `alert()` affiche un message, `console.log()` écrit dans la console.
+> **Rappel.** `let` crée une variable qui peut changer, `const` une variable fixe. `prompt()` pose une number et renvoie toujours du texte. `alert()` affiche un message, `console.log()` écrit dans la console.
 > Méthodes utiles : `toUpperCase()`, `toLowerCase()`, `slice()`, `charAt()`, `trim()`, `length`.
 
 1. Crée une variable `prenom` avec ton prénom et affiche-la dans la console.
@@ -57,10 +57,12 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 **Le but :** créer une page web qui affiche un billet de train. Les informations du passager arrivent en texte « brut » (espaces en trop, majuscules au mauvais endroit), et ton JavaScript doit les nettoyer, faire les calculs et les afficher proprement sur le billet.
 
 ### Partie 1 : préparer le projet
+
 1. Crée un dossier pour le projet.
 2. Dans ce dossier, crée trois fichiers vides : `index.html`, `style.css` et `script.js`.
 
 ### Partie 2 : le HTML
+
 3. Écris la structure de base d'une page HTML, avec le titre « Billet de train ».
 4. Relie ton fichier CSS à la page, dans le `<head>`.
 5. Relie ton fichier JS à la page, juste avant la fermeture du `<body>`.
@@ -74,6 +76,7 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 13. Ouvre la page dans ton navigateur. Tu dois voir toutes tes zones avec des « ? ».
 
 ### Partie 3 : le CSS
+
 14. Donne une couleur de fond à la page.
 15. Donne au billet un fond blanc, des coins arrondis, une largeur maximale, et centre-le sur la page.
 16. Mets l'en-tête dans un bandeau de couleur, avec le texte en blanc.
@@ -83,31 +86,33 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 20. Recharge la page et vérifie que ça ressemble à un billet.
 
 ### Partie 4 : le JavaScript
+
 21. En haut du fichier JS, crée une variable pour chaque donnée, exactement comme ci-dessous :
 
-| Donnée | Valeur |
-|---|---|
-| nom complet | `" mARIE duPONT "` |
-| année de naissance | `"1990"` |
-| ville de départ | `" paris"` |
-| ville d'arrivée | `"MARSEILLE "` |
-| durée en minutes | `"195"` |
-| numéro de place | `"47"` |
-| nombre de voyageurs | `"3"` |
-| prix d'un billet | `"39.90"` |
+| Donnée              | Valeur             |
+| ------------------- | ------------------ |
+| nom complet         | `" mARIE duPONT "` |
+| année de naissance  | `"1990"`           |
+| ville de départ     | `" paris"`         |
+| ville d'arrivée     | `"MARSEILLE "`     |
+| durée en minutes    | `"195"`            |
+| numéro de place     | `"47"`             |
+| nombre de voyageurs | `"3"`              |
+| prix d'un billet    | `"39.90"`          |
 
 22. Le nouvel outil, pour écrire dans une zone de la page : `document.getElementById("nomPassager").textContent = maVariable;`. Pour tester, affiche « RAIL ÉCOLE » dans l'en-tête avec cet outil.
-23. Le nom : affiche Marie DUPONT. *(Révise les exercices 4 et 7.)*
-24. Les initiales : affiche M.D. *(Révise l'exercice 8.)*
-25. L'âge : affiche 36 ans (en 2026). *(Révise l'exercice 11.)*
-26. Les villes : affiche Paris et Marseille, avec une majuscule. *(Révise les exercices 3 et 7.)*
-27. Les codes des gares : les 3 premières lettres de chaque ville en majuscules, PAR et MAR. *(Révise `slice`.)*
-28. La durée : affiche 3 h 15 min. *(Révise l'exercice 14.)*
-29. La voiture et la place : chaque voiture a 10 places (1 à 10 en voiture 1, 11 à 20 en voiture 2…). Affiche voiture 5 et place 7. *(Révise `Math.ceil` et `%`. Ne teste pas avec 10, 20, 30…)*
-30. Le prix, avec 2 chiffres après la virgule : nombre de voyageurs 3, prix total 119.70 €, réduction de 20 % - 23.94 €, à payer 95.76 €. *(Révise les exercices 9, 10 et 12.)*
-31. **Bonus** — la référence : 1re lettre de la ville de départ + dernière lettre de la ville d'arrivée + un tiret + nombre de lettres du nom de famille, en majuscules : PE-6. *(Révise `length - 1`.)*
+23. Le nom : affiche Marie DUPONT. _(Révise les exercices 4 et 7.)_
+24. Les initiales : affiche M.D. _(Révise l'exercice 8.)_
+25. L'âge : affiche 36 ans (en 2026). _(Révise l'exercice 11.)_
+26. Les villes : affiche Paris et Marseille, avec une majuscule. _(Révise les exercices 3 et 7.)_
+27. Les codes des gares : les 3 premières lettres de chaque ville en majuscules, PAR et MAR. _(Révise `slice`.)_
+28. La durée : affiche 3 h 15 min. _(Révise l'exercice 14.)_
+29. La voiture et la place : chaque voiture a 10 places (1 à 10 en voiture 1, 11 à 20 en voiture 2…). Affiche voiture 5 et place 7. _(Révise `Math.ceil` et `%`. Ne teste pas avec 10, 20, 30…)_
+30. Le prix, avec 2 chiffres après la virgule : nombre de voyageurs 3, prix total 119.70 €, réduction de 20 % - 23.94 €, à payer 95.76 €. _(Révise les exercices 9, 10 et 12.)_
+31. **Bonus** — la référence : 1re lettre de la ville de départ + dernière lettre de la ville d'arrivée + un tiret + nombre de lettres du nom de famille, en majuscules : PE-6. _(Révise `length - 1`.)_
 
 ### Partie 5 : le test final
+
 32. Change toutes les données en haut du fichier JS et recharge la page. Si ton code est bien fait, tout le billet se met à jour tout seul.
 
 **Les règles :** uniquement ce que tu as vu dans les exercices 1 à 15, plus l'outil de l'étape 22. Pas de `prompt` ni d'`alert`. Ne jamais écrire « Marie » ou « 36 » directement : tout doit être calculé à partir des données.
@@ -119,10 +124,12 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 **Le but :** une page de cinéma avec une barre de navigation qui reste en haut, des films à l'affiche, et un billet de réservation. Comme pour le train, les données arrivent « en vrac » et le JavaScript les nettoie.
 
 ### Partie 1 : préparer le projet
+
 1. Crée un dossier `Cinema`.
 2. Crée dedans un fichier HTML, un CSS et un JS, puis relie-les.
 
 ### Partie 2 : le HTML
+
 3. Une barre de navigation (`<nav>`) avec, à gauche, le nom du cinéma et, à droite, 3 liens : Accueil, Films, Réservation.
 4. Une partie « À l'affiche » avec 3 cartes de films (titre, durée, petit texte).
 5. Une partie « Ma réservation » : un billet avec une zone (id + « ? ») pour : prénom, nom, identifiant, titre du film, nombre de mots du titre, dernier mot du titre, durée, heure de début, heure de fin, rangée, siège, nombre de places, prix total, réduction, à payer, code de réservation.
@@ -130,6 +137,7 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 7. Beaucoup de texte (section « À propos ») pour que la page défile.
 
 ### Partie 3 : le CSS
+
 8. Le modèle de boîte : une bordure de 2px sur le billet, puis un `padding` de 20px. Où apparaît l'espace ?
 9. Ajoute une `margin` de 40px. Où apparaît l'espace cette fois ?
 10. Écris en commentaire la différence entre `margin` et `padding`.
@@ -143,28 +151,29 @@ Toutes les consignes au même endroit : ce qui est fait, et ce qui reste à fair
 18. La `<nav>` reste collée en haut quand on fait défiler (`position: sticky` + `top: 0`).
 
 ### Partie 4 : le JavaScript
+
 Les données, exactement comme ça :
 
-| Donnée | Valeur |
-|---|---|
-| nom complet | `" lUCAS bERNARD  "` |
-| email | `" Lucas.Bernard@Mail.com "` |
-| titre du film | `"  le GRAND voyage"` |
-| durée en minutes | `"142"` |
-| début de séance (minutes après minuit) | `"1230"` |
-| numéro de siège | `"38"` |
-| nombre de places | `"4"` |
-| prix d'une place | `"9.50"` |
+| Donnée                                 | Valeur                       |
+| -------------------------------------- | ---------------------------- |
+| nom complet                            | `" lUCAS bERNARD  "`         |
+| email                                  | `" Lucas.Bernard@Mail.com "` |
+| titre du film                          | `"  le GRAND voyage"`        |
+| durée en minutes                       | `"142"`                      |
+| début de séance (minutes après minuit) | `"1230"`                     |
+| numéro de siège                        | `"38"`                       |
+| nombre de places                       | `"4"`                        |
+| prix d'une place                       | `"9.50"`                     |
 
 19. Prénom et nom : Lucas et BERNARD.
 20. Identifiant : tout ce qui est avant le @, en minuscules → lucas.bernard.
 21. Titre du film : LE GRAND VOYAGE.
-22. Nombre de mots du titre : 3. *(Texte ou tableau ? Que compte `length` dans chaque cas ?)*
-23. Dernier mot du titre : VOYAGE. *(`length - 1` sur un tableau.)*
+22. Nombre de mots du titre : 3. _(Texte ou tableau ? Que compte `length` dans chaque cas ?)_
+23. Dernier mot du titre : VOYAGE. _(`length - 1` sur un tableau.)_
 24. Durée : 2 h 22 min.
 25. Heure de début : 20 h 30.
-26. Heure de fin : 22 h 52. *(Additionne d'abord. Attention à `Number()` !)*
-27. Rangée et siège : 12 sièges par rangée. Le siège 38 est en rangée 4, siège 2. *(Remplis d'abord un tableau à la main avec les sièges 5, 14 et 30.)*
+26. Heure de fin : 22 h 52. _(Additionne d'abord. Attention à `Number()` !)_
+27. Rangée et siège : 12 sièges par rangée. Le siège 38 est en rangée 4, siège 2. _(Remplis d'abord un tableau à la main avec les sièges 5, 14 et 30.)_
 28. Prix : total 38.00 €, réduction de 15 % - 5.70 €, à payer 32.30 €.
 29. Code de réservation : 2 premières lettres du titre + dernière lettre du nom + tiret + nombre de lettres du prénom → LED-5.
 30. Test final : change toutes les données et vérifie que tout suit.
@@ -176,6 +185,7 @@ Les données, exactement comme ça :
 ## 5. Les conditions (exercices 16 à 22) ⏭️
 
 > **Rappel.** Une condition exécute du code seulement si quelque chose est vrai :
+>
 > ```js
 > let age = Number(prompt("Ton âge ?"));
 > if (age >= 18) {
@@ -184,6 +194,7 @@ Les données, exactement comme ça :
 >   alert("Tu es mineur");
 > }
 > ```
+>
 > Comparaisons : `===` (égal), `!==` (différent), `>`, `<`, `>=`, `<=`. Pour combiner : `&&` (et), `||` (ou). On peut enchaîner avec `else if`.
 
 16. Demande un nombre et indique s'il est pair ou impair (modulo !).
@@ -192,11 +203,12 @@ Les données, exactement comme ça :
 19. Demande un mot de passe et affiche « trop court » s'il fait moins de 8 caractères, sinon « accepté ».
 20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
 21. Demande un nombre et indique s'il est divisible par 3, par 5, par les deux ou par aucun.
-22. Mini-calculatrice : demande deux nombres puis une opération (+, -, *, /) et affiche le résultat. Si l'utilisateur veut diviser par 0, affiche un message d'erreur.
+22. Mini-calculatrice : demande deux nombres puis une opération (+, -, \*, /) et affiche le résultat. Si l'utilisateur veut diviser par 0, affiche un message d'erreur.
 
-**Le `switch` (découvert toute seule à l'exercice 22) :** quand une variable peut valoir plusieurs valeurs **précises**, le `switch` est plus lisible qu'une suite de `else if`. Chaque `case` se termine par `break`, et `default` gère « tous les autres cas ». Attention : tous les `case` partagent la même boîte, donc pas deux `const` avec le même nom. *(Exercices dans le bilan de fin de semaine, plus bas.)*
+**Le `switch` (découvert toute seule à l'exercice 22) :** quand une variable peut valoir plusieurs valeurs **précises**, le `switch` est plus lisible qu'une suite de `else if`. Chaque `case` se termine par `break`, et `default` gère « tous les autres cas ». Attention : tous les `case` partagent la même boîte, donc pas deux `const` avec le même nom. _(Exercices dans le bilan de fin de semaine, plus bas.)_
 
 **Bonus — corriger les cas limites de tes projets :**
+
 - **Cinéma, siège multiple de 12** : le siège 36 donne « place 0 ». Si le reste vaut 0, la place est 12.
 - **Train, place multiple de 10** : la place 50 donne « place 0 ». Même correction avec 10.
 - **Cinéma, le zéro des minutes** : refais l'ajout du « 0 » devant les minutes (18 h 05) avec un `if` au lieu de `padStart`.
@@ -208,10 +220,12 @@ Les données, exactement comme ça :
 **Le but :** une page qui affiche le bulletin d'un élève. Comme pour le train et le cinéma, les données arrivent « en vrac ». La nouveauté : selon les valeurs, la page n'affiche **pas la même chose** (texte, couleur, message). C'est le travail des conditions.
 
 ### Partie 1 : préparer le projet
+
 1. Crée un dossier `Bulletin`.
 2. Crée dedans `index.html`, `bulletin.css` et `bulletin.js`, puis relie-les.
 
 ### Partie 2 : le HTML
+
 3. Un en-tête avec le nom de l'école : COLLÈGE ÉCOLE, et le titre « Bulletin du 1er trimestre ».
 4. Une partie « élève » avec une zone (id + « ? ») pour : prénom, nom, âge, statut (majeur ou mineur), délégué.
 5. Un **tableau** (`<table>`) des notes, avec 3 colonnes : Matière, Note, Appréciation. Une ligne par matière : Français, Maths, Anglais. Les cases « Note » et « Appréciation » sont des zones avec un id.
@@ -219,6 +233,7 @@ Les données, exactement comme ça :
 7. Une partie « vie scolaire » avec une zone pour : nombre d'absences, message sur les absences, message pour les parents.
 
 ### Partie 3 : le CSS
+
 8. Donne au bulletin un fond blanc, une largeur maximale de 700px, centre-le, et ajoute une ombre (`box-shadow`, comme au cinéma).
 9. Le tableau : `border-collapse: collapse`, une bordure sur chaque case (`th` et `td`), un `padding` dans les cases. Écris en commentaire ce que change `border-collapse`.
 10. La ligne de titre du tableau (`th`) dans une couleur de fond, texte en blanc.
@@ -227,37 +242,40 @@ Les données, exactement comme ça :
 13. Avec Flexbox, mets la partie « élève » et la partie « résultats » côte à côte.
 
 ### Partie 4 : le JavaScript
+
 Les données, exactement comme ça :
 
-| Donnée | Valeur |
-|---|---|
-| nom complet | `" tHOMAS mARTIN "` |
-| année de naissance | `"2009"` |
-| note de français | `"8.5"` |
-| note de maths | `"16"` |
-| note d'anglais | `"12.5"` |
-| nombre d'absences (demi-journées) | `"6"` |
-| délégué | `" OUI"` |
+| Donnée                            | Valeur              |
+| --------------------------------- | ------------------- |
+| nom complet                       | `" tHOMAS mARTIN "` |
+| année de naissance                | `"2009"`            |
+| note de français                  | `"8.5"`             |
+| note de maths                     | `"16"`              |
+| note d'anglais                    | `"12.5"`            |
+| nombre d'absences (demi-journées) | `"6"`               |
+| délégué                           | `" OUI"`            |
 
 14. Le nouvel outil, pour donner une classe CSS à une zone : `document.getElementById("noteFrancais").classList.add("rouge");`. Teste-le sur une zone.
-15. Prénom et nom : Thomas et MARTIN. Âge : 17 ans. *(Révise le cinéma.)*
-16. Majeur ou mineur : affiche « mineur ». *(Révise l'exercice 17.)*
-17. Délégué : si la donnée, nettoyée et en minuscules, vaut `"oui"`, affiche « Délégué de classe », sinon « — ». *(Révise `trim` et `toLowerCase`.)*
-18. Les notes et les appréciations : moins de 10 → « insuffisant » en **rouge** ; de 10 à 15 → « bien » en **orange** ; plus de 15 → « très bien » en **vert**. La couleur va sur la note **et** sur l'appréciation. Résultat : français 8.5 insuffisant, maths 16 très bien, anglais 12.5 bien. *(Révise l'exercice 20. Attention à `Number()` !)*
+15. Prénom et nom : Thomas et MARTIN. Âge : 17 ans. _(Révise le cinéma.)_
+16. Majeur ou mineur : affiche « mineur ». _(Révise l'exercice 17.)_
+17. Délégué : si la donnée, nettoyée et en minuscules, vaut `"oui"`, affiche « Délégué de classe », sinon « — ». _(Révise `trim` et `toLowerCase`.)_
+18. Les notes et les appréciations : moins de 10 → « insuffisant » en **rouge** ; de 10 à 15 → « bien » en **orange** ; plus de 15 → « très bien » en **vert**. La couleur va sur la note **et** sur l'appréciation. Résultat : français 8.5 insuffisant, maths 16 très bien, anglais 12.5 bien. _(Révise l'exercice 20. Attention à `Number()` !)_
 19. La moyenne, avec 2 chiffres après la virgule : 12.33. Mets-la en couleur avec la même règle qu'à l'étape 18.
-20. La meilleure matière : Maths. *(Une matière est la meilleure si sa note est plus grande ou égale **aux deux autres** : pense à `&&`.)*
-21. La mention : 16 ou plus → « très bien » ; 14 ou plus → « bien » ; 12 ou plus → « assez bien » ; sinon → « aucune ». Ici : assez bien. *(`else if`, et l'ordre des conditions compte : essaie de les inverser pour voir.)*
+20. La meilleure matière : Maths. _(Une matière est la meilleure si sa note est plus grande ou égale **aux deux autres** : pense à `&&`.)_
+21. La mention : 16 ou plus → « très bien » ; 14 ou plus → « bien » ; 12 ou plus → « assez bien » ; sinon → « aucune ». Ici : assez bien. _(`else if`, et l'ordre des conditions compte : essaie de les inverser pour voir.)_
 22. La décision : « Admis » en vert si la moyenne est de 10 ou plus, sinon « Refusé » en rouge.
 23. Les absences : plus de 5 → « Attention : 6 demi-journées d'absence » avec la classe `.alerte` ; sinon « Assiduité correcte ».
-24. Le message pour les parents : si l'élève est mineur **ou** si la décision est « Refusé », affiche « Signature des parents obligatoire » ; sinon « Aucune signature demandée ». *(Pense à `||`.)*
-25. **Bonus** : si le nom complet est vide (`"   "`), affiche « Élève inconnu » au lieu du prénom et du nom. *(Révise l'exercice 18.)*
+24. Le message pour les parents : si l'élève est mineur **ou** si la décision est « Refusé », affiche « Signature des parents obligatoire » ; sinon « Aucune signature demandée ». _(Pense à `||`.)_
+25. **Bonus** : si le nom complet est vide (`"   "`), affiche « Élève inconnu » au lieu du prénom et du nom. _(Révise l'exercice 18.)_
 
 ### Partie 5 : le test final
+
 26. Change les données pour tester **chaque** chemin de tes conditions. Au minimum :
-   - toutes les notes au-dessus de 15 (mention « très bien », tout en vert) ;
-   - une moyenne en dessous de 10 (« Refusé ») ;
-   - une note pile à 10 et une pile à 15 : quelle appréciation ? Est-ce bien ce que dit la consigne ?
-   - un élève né en 2005 (majeur), délégué `"non"`, 2 absences.
+
+- toutes les notes au-dessus de 15 (mention « très bien », tout en vert) ;
+- une moyenne en dessous de 10 (« Refusé ») ;
+- une note pile à 10 et une pile à 15 : quelle appréciation ? Est-ce bien ce que dit la consigne ?
+- un élève né en 2005 (majeur), délégué `"non"`, 2 absences.
 
 **Les règles :** pas de `prompt` ni d'`alert`. Ne jamais écrire « insuffisant » ou « 12.33 » directement dans le HTML : tout doit être décidé et calculé par le JavaScript.
 
@@ -266,12 +284,14 @@ Les données, exactement comme ça :
 ## 7. Les fonctions (exercices 23 à 30)
 
 > **Rappel.** Une fonction est une recette qu'on écrit une fois et qu'on réutilise :
+>
 > ```js
 > function direBonjour(prenom) {
 >   return "Bonjour " + prenom;
 > }
 > console.log(direBonjour("Marie")); // Bonjour Marie
 > ```
+>
 > `prenom` est un **paramètre** (la valeur qu'on donne à la fonction), `return` renvoie le résultat, et `direBonjour("Marie")` **appelle** la fonction.
 
 23. Crée une fonction `doubler(nombre)` qui renvoie le nombre multiplié par 2. Teste-la avec 3 valeurs.
@@ -292,10 +312,12 @@ Les données, exactement comme ça :
 **Le but :** la fiche d'emprunt d'une adhérente de la médiathèque, avec 3 livres. La nouveauté : les mêmes calculs reviennent plusieurs fois (3 titres, 3 auteurs, 3 retards, plein de prix). Au lieu de recopier le code, tu écris **une fonction** et tu l'appelles autant de fois que nécessaire.
 
 ### Partie 1 : préparer le projet
+
 1. Crée un dossier `Mediatheque`.
 2. Crée dedans `index.html`, `mediatheque.css` et `mediatheque.js`, puis relie-les.
 
 ### Partie 2 : le HTML
+
 3. Une barre de navigation avec le nom : MÉDIATHÈQUE ÉCOLE, et 3 liens : Catalogue, Mon compte, Horaires.
 4. Une « carte d'adhérent » avec une zone (id + « ? ») pour : nom, âge, tarif (normal ou réduit), code adhérent.
 5. Une partie « Mes emprunts » avec **3 fiches livre identiques**. Chaque fiche a une zone pour : titre, auteur, nombre de jours, retard, statut, pénalité. Donne des id numérotés : `titre1`, `titre2`, `titre3`, etc.
@@ -303,40 +325,43 @@ Les données, exactement comme ça :
 7. Un pied de page.
 
 ### Partie 3 : le CSS
+
 8. **Les variables CSS** (nouveau) : en haut du fichier, dans `:root`, crée `--couleur-principale`, `--couleur-fond` et `--arrondi`. Utilise-les partout avec `var(--couleur-principale)`. Change une seule variable et regarde toute la page changer.
-9. La `<nav>` : Flexbox, nom à gauche, liens à droite, collée en haut (`position: sticky`). *(Révise le cinéma.)*
+9. La `<nav>` : Flexbox, nom à gauche, liens à droite, collée en haut (`position: sticky`). _(Révise le cinéma.)_
 10. Les 3 fiches livre ont **la même classe** `.fiche` : un seul bloc de CSS pour les trois. Mets-les côte à côte avec Flexbox et `gap`.
 11. Dans chaque fiche : l'étiquette à gauche, la valeur à droite.
 12. Reprends tes classes `.vert` et `.rouge` du bulletin pour le statut « à l'heure » / « en retard ».
 
 ### Partie 4 : le JavaScript
+
 Les données, exactement comme ça :
 
-| Donnée | Valeur |
-|---|---|
-| nom complet | `" sOPHIE lEROY "` |
-| année de naissance | `"1985"` |
-| livre 1 : titre / auteur / jours | `"  les MISÉRABLES"` / `" victor hugo"` / `"25"` |
+| Donnée                           | Valeur                                                    |
+| -------------------------------- | --------------------------------------------------------- |
+| nom complet                      | `" sOPHIE lEROY "`                                        |
+| année de naissance               | `"1985"`                                                  |
+| livre 1 : titre / auteur / jours | `"  les MISÉRABLES"` / `" victor hugo"` / `"25"`          |
 | livre 2 : titre / auteur / jours | `"le petit prince "` / `"antoine SAINT-EXUPÉRY"` / `"10"` |
-| livre 3 : titre / auteur / jours | `" NOTRE-DAME de paris"` / `"VICTOR huGO "` / `"34"` |
+| livre 3 : titre / auteur / jours | `" NOTRE-DAME de paris"` / `"VICTOR huGO "` / `"34"`      |
 
 Règles de la médiathèque : on peut garder un livre **21 jours**. Chaque jour de retard coûte **0.20 €**. Moins de 18 ans ou 65 ans et plus : **50 % de réduction**.
 
 Écris chaque fonction, **teste-la avec `console.log`** sur 2 ou 3 valeurs, puis utilise-la sur la page.
 
 13. `afficher(id, valeur)` : écrit la valeur dans la zone. Elle remplace `document.getElementById(id).textContent = valeur;` partout dans ton code.
-14. `majuscule(mot)` : `"sOPHIE"` → `"Sophie"`. *(Exercice 25.)*
+14. `majuscule(mot)` : `"sOPHIE"` → `"Sophie"`. _(Exercice 25.)_
 15. `formaterNom(nomComplet)` : nettoie, sépare, et renvoie `"Sophie LEROY"`. Elle **utilise** `majuscule`. Utilise-la 4 fois : pour l'adhérente et pour les 3 auteurs (Victor HUGO, Antoine SAINT-EXUPÉRY, Victor HUGO).
 16. `formaterTitre(titre)` : nettoie et met en majuscules → LES MISÉRABLES, LE PETIT PRINCE, NOTRE-DAME DE PARIS.
 17. `calculerAge(annee)` : renvoie 41.
-18. `calculerRetard(jours)` : renvoie le nombre de jours de retard, ou 0 s'il n'y en a pas. Résultat : 4, 0, 13. *(Une condition **dans** une fonction.)*
+18. `calculerRetard(jours)` : renvoie le nombre de jours de retard, ou 0 s'il n'y en a pas. Résultat : 4, 0, 13. _(Une condition **dans** une fonction.)_
 19. `statut(retard)` : renvoie « à l'heure » ou « en retard ». Mets la bonne couleur sur la zone.
 20. `formaterPrix(montant)` : `0.8` → `"0.80 €"`. Utilise-la pour **tous** les prix de la page.
 21. Les pénalités : 0.80 €, 0.00 €, 2.60 €. Total : 3.40 €.
-22. Le tarif : `tarifReduit(age)` renvoie `true` ou `false`. Affiche « normal » ou « réduit ». Ici : normal, réduction 0.00 €, à payer 3.40 €. *(Révise l'exercice 26 et `||`.)*
+22. Le tarif : `tarifReduit(age)` renvoie `true` ou `false`. Affiche « normal » ou « réduit ». Ici : normal, réduction 0.00 €, à payer 3.40 €. _(Révise l'exercice 26 et `||`.)_
 23. **Bonus** — `creerCode(nom, annee)` : les 2 premières lettres du nom de famille en majuscules + tiret + les 2 derniers chiffres de l'année → LE-85.
 
 ### Partie 5 : le test final
+
 24. Change les données : une adhérente née en 2012 (tarif réduit), un livre gardé pile 21 jours (en retard ou pas ?), et un 4e nom d'auteur en vrac. Tout doit suivre sans toucher aux fonctions.
 25. Compte combien de fois tu as appelé `formaterPrix` et `formaterNom`. Imagine le code sans fonctions : combien de lignes en plus ?
 
@@ -347,15 +372,18 @@ Règles de la médiathèque : on peut garder un livre **21 jours**. Chaque jour 
 ## 9. Incrémentation et boucles (exercices 31 à 40)
 
 > **Rappel.** Incrémenter, c'est augmenter une variable ; décrémenter, c'est la diminuer.
+>
 > ```js
 > let n = 5;
-> n++;     // 6  (ajoute 1)
-> n--;     // 5  (enlève 1)
+> n++; // 6  (ajoute 1)
+> n--; // 5  (enlève 1)
 > n += 10; // 15
-> n -= 3;  // 12
-> n *= 2;  // 24
+> n -= 3; // 12
+> n *= 2; // 24
 > ```
+>
 > La boucle `for` répète un nombre de fois précis, la boucle `while` répète tant qu'une condition est vraie :
+>
 > ```js
 > for (let i = 1; i <= 5; i++) {
 >   console.log(i); // 1, 2, 3, 4, 5
@@ -367,6 +395,7 @@ Règles de la médiathèque : on peut garder un livre **21 jours**. Chaque jour 
 >   j--;
 > }
 > ```
+>
 > Attention : dans un `while`, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
 
 31. Crée une variable `score = 0`. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
@@ -388,11 +417,11 @@ Une page complète qui utilise **tout** ce qui a été vu : HTML, CSS (nav `stic
 
 **À intégrer dans tous les cas :** un en-tête, une barre de navigation `sticky`, une **grille** de cartes (CSS Grid), un **formulaire** (fait de mémoire, sans modèle), un pied de page en plusieurs colonnes, des variables CSS, et des fonctions pour les calculs répétés.
 
-| Thème | La page | Conditions | Fonctions |
-|---|---|---|---|
-| 🍕 Commande au restaurant | grille de plats + ticket de commande | livraison gratuite si plus de 30 € ; menu enfant si moins de 12 ans ; majoration après 22 h | `calculerTotal()`, `formaterPrix()` |
-| 🏋️ Abonnement salle de sport | grille des formules + fiche membre | tarif réduit si étudiant ou senior ; alerte si expiration dans moins de 7 jours ; niveau selon le nombre de séances | `calculerAge()`, `calculerPrixAbonnement()` |
-| 🚲 Location de vélos | grille des vélos + reçu de location | tarif horaire ou forfait journée ; caution si vélo électrique ; pénalité si retard | `convertirEnHeures()`, `calculerPrixLocation()` |
+| Thème                        | La page                              | Conditions                                                                                                          | Fonctions                                       |
+| ---------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| 🍕 Commande au restaurant    | grille de plats + ticket de commande | livraison gratuite si plus de 30 € ; menu enfant si moins de 12 ans ; majoration après 22 h                         | `calculerTotal()`, `formaterPrix()`             |
+| 🏋️ Abonnement salle de sport | grille des formules + fiche membre   | tarif réduit si étudiant ou senior ; alerte si expiration dans moins de 7 jours ; niveau selon le nombre de séances | `calculerAge()`, `calculerPrixAbonnement()`     |
+| 🚲 Location de vélos         | grille des vélos + reçu de location  | tarif horaire ou forfait journée ; caution si vélo électrique ; pénalité si retard                                  | `convertirEnHeures()`, `calculerPrixLocation()` |
 
 ---
 
@@ -401,12 +430,13 @@ Une page complète qui utilise **tout** ce qui a été vu : HTML, CSS (nav `stic
 **Le principe :** des exercices **courts** (5 à 10 lignes chacun), sans consigne sur l'outil à utiliser. C'est toi qui **choisis ta méthode**, et tu écris en commentaire, au-dessus du code, **pourquoi** tu l'as choisie. Le but : vérifier que tu as compris, pas t'épuiser.
 
 ### Bilan 1 : les conditions
+
 1. **Feu tricolore.** Demande une couleur (« rouge », « orange », « vert ») et affiche « stop », « ralentis » ou « passe ». Une autre couleur → « couleur inconnue ».
 2. **Week-end.** Demande un jour (« lundi », « Samedi »…) et affiche « jour de travail » ou « week-end ».
 3. **Musée.** Demande un âge : moins de 6 ans → gratuit ; moins de 18 ans → 5 € ; sinon → 8 €.
 4. **Saisons.** Demande un numéro de mois (1 à 12) et affiche la saison (12, 1, 2 → hiver ; 3, 4, 5 → printemps…). Un nombre en dehors de 1 à 12 → « mois inconnu ».
 5. **Nombre gagnant.** Demande un nombre : s'il est pair **et** plus grand que 50 → « gagné », sinon → « perdu ».
-6. **Question de réflexion (sans code).** Pourrais-tu faire l'exercice 3 avec un `switch` ? Pourquoi est-ce plus simple avec `else if` ?
+6. **number de réflexion (sans code).** Pourrais-tu faire l'exercice 3 avec un `switch` ? Pourquoi est-ce plus simple avec `else if` ?
 
 ---
 
@@ -418,9 +448,13 @@ Une page complète qui utilise **tout** ce qui a été vu : HTML, CSS (nav `stic
 - **L'ordre des conditions (à retravailler, vu à l'exercice 21)** : avec `else if`, JavaScript lit de haut en bas et **s'arrête à la première condition vraie**. Donc : le cas le plus précis en premier, le `else` (sans condition) en dernier. Exercices ci-dessous, du plus facile au plus dur :
   - **A. Je lis, je prédis.** Sans lancer le code, écris ce qu'il affiche pour 5, 12, 16 et 20. Puis lance-le et compare. Qu'est-ce qui ne va pas ?
     ```js
-    if (note >= 10) { alert("bien"); }
-    else if (note >= 16) { alert("très bien"); }
-    else { alert("insuffisant"); }
+    if (note >= 10) {
+      alert("bien");
+    } else if (note >= 16) {
+      alert("très bien");
+    } else {
+      alert("insuffisant");
+    }
     ```
   - **B. Trouve le bug.** Dans l'exercice 21, si on met le bloc « par 3 et par 5 » en dernier (avant le `else`), quels nombres entre 1 et 30 donnent un mauvais résultat ? Fais la liste à la main.
   - **C. Remets dans l'ordre.** Tarif cinéma : moins de 12 ans → 5 € ; 65 ans et plus → 6 € ; étudiant (`etudiant === "oui"`) → 7 € ; sinon → 10 €. Un enfant de 10 ans étudiant paie 5 €. Écris les conditions dans le bon ordre et teste 10 ans étudiant, 20 ans étudiant, 70 ans, 40 ans.

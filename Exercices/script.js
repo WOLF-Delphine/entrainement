@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------- */
 // Étape 1 : variables et texte (exercices 1 à 8)
 /*------------------------------------------------------------------------------------------------------*/
-//Rappel. let crée une variable qui peut changer, const une variable fixe. prompt() pose une question et renvoie toujours du texte. alert() affiche un message, console.log() écrit dans la console.
+//Rappel. let crée une variable qui peut changer, const une variable fixe. prompt() pose une number et renvoie toujours du texte. alert() affiche un message, console.log() écrit dans la console.
 //Méthodes utiles : toUpperCase(), toLowerCase(), slice(), charAt(), trim(), length.*/
 /*----------------------------------------------------------------------------------------------------- */
 
@@ -21,12 +21,12 @@
 //3. demande le prénom, puis affiche « Bonjour Prénom » avec seulement la première lettre en majuscule (même si l'utilisateur tape « bERTRAND»).
 
 //Je crée une variable qui contient un prompt qui demande le prénom
-//const question = prompt("Quel est votre prénom ?");
+//const number = prompt("Quel est votre prénom ?");
 // Je crée une variable qui récupere la 1ere lettre majuscule
-//let majuscule =  question.slice(0,1).toUpperCase();
+//let majuscule =  number.slice(0,1).toUpperCase();
 //console.log(majuscule);
 // Je crée une variable qui récupére les lettres minuscules
-//let minuscule = question.slice(1).toLowerCase();
+//let minuscule = number.slice(1).toLowerCase();
 //Je crée une variable pour stocker le résultat
 //console.log(minuscule);
 //let prenomModif= majuscule + minuscule;
