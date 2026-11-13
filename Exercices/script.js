@@ -512,14 +512,21 @@ console.log(appreciation(13));
 console.log(appreciation(18));
 
 //30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
-function  presenter(prenom,nom,age){
+function presenter(prenom, nom, age) {
   const prenomPropre = prenom.trim();
   const nomPropre = nom.trim().toUpperCase();
-  
 
-return "Je m'appelle "+ majuscule(prenomPropre) +" " + nomPropre +" et j'ai "+ age +" ans";
+  return (
+    "Je m'appelle " +
+    majuscule(prenomPropre) +
+    " " +
+    nomPropre +
+    " et j'ai " +
+    age +
+    " ans"
+  );
 }
-console.log(presenter("marie","durand",25));
+console.log(presenter("marie", "durand", 25));
 
 /*-------------------------------------------------------------------------------------------------------- */
 /*
@@ -534,13 +541,13 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //n *= 2;  // 24
 //La boucle for répète un nombre de fois précis, la boucle while répète tant qu'une condition est vraie :
 //for (let i = 1; i <= 5; i++) {
-  //console.log(i); // 1, 2, 3, 4, 5
+//console.log(i); // 1, 2, 3, 4, 5
 //}
 
 //let j = 3;
 //while (j > 0) {
- // console.log(j); // 3, 2, 1
- // j--;
+// console.log(j); // 3, 2, 1
+// j--;
 //}
 //Attention : dans un while, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
 //31. Crée une variable score = 0. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
