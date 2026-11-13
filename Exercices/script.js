@@ -444,43 +444,43 @@ prenom est un paramètre (la valeur qu'on donne à la fonction), return renvoie 
 }
 /*--------------------------------------------------------------------------------------------------------*/
 //23. Crée une fonction doubler(nombre) qui renvoie le nombre multiplié par 2. Teste-la avec 3 valeurs.
-function doubler(nombre) {
-  return nombre * 2;
-}
-console.log(doubler(-3));
-console.log(doubler(10));
-console.log(doubler(4));
+//function doubler(nombre) {
+  //return nombre * 2;
+//}
+//console.log(doubler(-3));
+//console.log(doubler(10));
+//console.log(doubler(4));
 
 //24. Crée une fonction additionner(a, b) qui renvoie la somme.
 
-function additionner(a, b) {
-  return a + b;
-}
-console.log(additionner(8, 104));
+//function additionner(a, b) {
+  //return a + b;
+//}
+//console.log(additionner(8, 104));
 
 //25. Transforme l'exercice 3 en fonction majuscule(mot) qui renvoie le mot avec seulement la première lettre en majuscule. Utilise-la avec un prompt.
-function majuscule(mot) {
-  const motNettoyage = mot.trim();
-  const premiereLettreMot = motNettoyage.slice(0, 1);
-  const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
-  const resteMot = motNettoyage.slice(1);
-  const resteMotMin = resteMot.toLowerCase();
-  return premiereLettreMotMaj + resteMotMin;
-}
-console.log(majuscule("    guiLLaume"));
+//function majuscule(mot) {
+  //const motNettoyage = mot.trim();
+  //const premiereLettreMot = motNettoyage.slice(0, 1);
+  //const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
+  //const resteMot = motNettoyage.slice(1);
+  //const resteMotMin = resteMot.toLowerCase();
+  //return premiereLettreMotMaj + resteMotMin;
+//}
+//console.log(majuscule("    guiLLaume"));
 //26. Crée une fonction estPair(nombre) qui renvoie true ou false.
-function estPair(nombre) {
-  if (nombre % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log(estPair(26));
-console.log(estPair(7));
+//function estPair(nombre) {
+  //if (nombre % 2 === 0) {
+    //return true;
+  //} else {
+    //return false;
+  //}
+//}
+//console.log(estPair(26));
+//console.log(estPair(7));
 
 //27. Crée une fonction aireRectangle(longueur, largeur) et une fonction perimetreRectangle(longueur, largeur).
-function aireRectangle(longueur, largeur) {
+/* function aireRectangle(longueur, largeur) {
   return longueur * largeur;
 }
 console.log(aireRectangle(6, 10));
@@ -489,16 +489,16 @@ function perimetreRectangle(longueur, largeur) {
   return (longueur + largeur) * 2;
 }
 console.log(perimetreRectangle(16, 32));
-
+ */
 //28. Crée une fonction celsiusVersFahrenheit(c) (formule : c × 9 / 5 + 32).
-function celsiusVersFahrenheit(c) {
+/* function celsiusVersFahrenheit(c) {
   return (c * 9) / 5 + 32;
 }
 console.log(celsiusVersFahrenheit(0));
-
+ */
 //29. Crée une fonction appreciation(note) qui renvoie « insuffisant », « bien » ou « très bien » (reprends l'exercice 20).
 //Rappel Exercice 20. Demande une note sur 20 et affiche « insuffisant » (moins de 10), « bien » (10 à 15) ou « très bien » (plus de 15).
-function appreciation(note) {
+/* unction appreciation(note) {
   if (note < 10) {
     return "Insuffisant";
   } else if (note <= 15) {
@@ -510,9 +510,9 @@ function appreciation(note) {
 console.log(appreciation(4));
 console.log(appreciation(13));
 console.log(appreciation(18));
-
+ */
 //30. Crée une fonction presenter(prenom, nom, age) qui utilise ta fonction majuscule et renvoie « Je m'appelle Marie DUPONT et j'ai 25 ans ».
-function presenter(prenom, nom, age) {
+/* unction presenter(prenom, nom, age) {
   const prenomPropre = prenom.trim();
   const nomPropre = nom.trim().toUpperCase();
 
@@ -526,7 +526,7 @@ function presenter(prenom, nom, age) {
     " ans"
   );
 }
-console.log(presenter("marie", "durand", 25));
+console.log(presenter("marie", "durand", 25)); */
 
 /*-------------------------------------------------------------------------------------------------------- */
 /*
@@ -551,7 +551,33 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //}
 //Attention : dans un while, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
 //31. Crée une variable score = 0. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
+let score= 0;
+console.log(score);
+score= score +10;
+console.log(score);
+score= score +25;
+console.log(score);
+score= score -5;
+console.log(score);
+
+//Autre version
+let score2=0;
+console.log(score2);
+score2+=10;
+console.log(score2);
+score2+=25;
+console.log(score2);
+score2-=5;
+console.log(score2);
+
 //32. Affiche les nombres de 1 à 10 avec une boucle for, puis de 10 à 1.
+for(let i=1;i<=10;i++){
+  console.log(i);
+}
+for(let i=10;i>=1;i--){
+  console.log(i);
+}
+
 //33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
 //34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
 //35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
