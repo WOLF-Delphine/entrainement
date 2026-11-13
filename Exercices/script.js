@@ -579,6 +579,7 @@ for(let i=10;i>=1;i--){
 }
 
 //33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
+
 //34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
 //35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
 //36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
