@@ -445,7 +445,7 @@ prenom est un paramètre (la valeur qu'on donne à la fonction), return renvoie 
 /*--------------------------------------------------------------------------------------------------------*/
 //23. Crée une fonction doubler(nombre) qui renvoie le nombre multiplié par 2. Teste-la avec 3 valeurs.
 //function doubler(nombre) {
-  //return nombre * 2;
+//return nombre * 2;
 //}
 //console.log(doubler(-3));
 //console.log(doubler(10));
@@ -454,27 +454,27 @@ prenom est un paramètre (la valeur qu'on donne à la fonction), return renvoie 
 //24. Crée une fonction additionner(a, b) qui renvoie la somme.
 
 //function additionner(a, b) {
-  //return a + b;
+//return a + b;
 //}
 //console.log(additionner(8, 104));
 
 //25. Transforme l'exercice 3 en fonction majuscule(mot) qui renvoie le mot avec seulement la première lettre en majuscule. Utilise-la avec un prompt.
 //function majuscule(mot) {
-  //const motNettoyage = mot.trim();
-  //const premiereLettreMot = motNettoyage.slice(0, 1);
-  //const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
-  //const resteMot = motNettoyage.slice(1);
-  //const resteMotMin = resteMot.toLowerCase();
-  //return premiereLettreMotMaj + resteMotMin;
+//const motNettoyage = mot.trim();
+//const premiereLettreMot = motNettoyage.slice(0, 1);
+//const premiereLettreMotMaj = premiereLettreMot.toUpperCase();
+//const resteMot = motNettoyage.slice(1);
+//const resteMotMin = resteMot.toLowerCase();
+//return premiereLettreMotMaj + resteMotMin;
 //}
 //console.log(majuscule("    guiLLaume"));
 //26. Crée une fonction estPair(nombre) qui renvoie true ou false.
 //function estPair(nombre) {
-  //if (nombre % 2 === 0) {
-    //return true;
-  //} else {
-    //return false;
-  //}
+//if (nombre % 2 === 0) {
+//return true;
+//} else {
+//return false;
+//}
 //}
 //console.log(estPair(26));
 //console.log(estPair(7));
@@ -579,19 +579,42 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 // }
 
 //33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
-for(let i=1;i<=20;i++){
-if(i%2===0){
-  console.log (`Le nombre ${i} est pair`);
-}else{
-  console.log(`Le nombre ${i} est impair`);
-}
-}
+// for(let i=1;i<=20;i++){
+// if(i%2===0){
+//   console.log (`Le nombre ${i} est pair`);
+// }else{
+//   console.log(`Le nombre ${i} est impair`);
+// }
+// }
 
 //34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
-const nombre =Number(prompt("Donnez moi un nombre ?"));
-
+// const nombre = Number(prompt("Donnez moi un nombre ?"));
+// for (let i = 1; i <= 10; i++) {
+//   let calcul = nombre * i;
+//   console.log(`${nombre} x ${i} = ${calcul}`);
+// }
+//Autres methode
+// function table(nombre) {
+//   for (let i = 1; i <= 10; i++) {
+//     let calcul = nombre * i;
+//    console.log(`${nombre} x ${i} = ${calcul}`);
+//   }
+// }
+// table(nombre);
 
 //35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
+
+function somme(max) {
+  let total = 0;
+
+  for (let i = 1; i <= max; i++) {
+   total += i;
+  }
+  return total;
+}
+console.log(somme(100));
+console.log(somme(50));
+
 //36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
 //37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
 //38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
