@@ -551,36 +551,46 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //}
 //Attention : dans un while, si tu oublies de changer la variable, la boucle ne s'arrête jamais.
 //31. Crée une variable score = 0. Ajoute 10, puis 25, puis enlève 5, en affichant le score après chaque étape.
-let score= 0;
-console.log(score);
-score= score +10;
-console.log(score);
-score= score +25;
-console.log(score);
-score= score -5;
-console.log(score);
+// let score= 0;
+// console.log(score);
+// score= score +10;
+// console.log(score);
+// score= score +25;
+// console.log(score);
+// score= score -5;
+// console.log(score);
 
-//Autre version
-let score2=0;
-console.log(score2);
-score2+=10;
-console.log(score2);
-score2+=25;
-console.log(score2);
-score2-=5;
-console.log(score2);
+// Autre version
+// let score2=0;
+// console.log(score2);
+// score2+=10;
+// console.log(score2);
+// score2+=25;
+// console.log(score2);
+// score2-=5;
+// console.log(score2);
 
-//32. Affiche les nombres de 1 à 10 avec une boucle for, puis de 10 à 1.
-for(let i=1;i<=10;i++){
-  console.log(i);
-}
-for(let i=10;i>=1;i--){
-  console.log(i);
-}
+// 32. Affiche les nombres de 1 à 10 avec une boucle for, puis de 10 à 1.
+// for(let i=1;i<=10;i++){
+//   console.log(i);
+// }
+// for(let i=10;i>=1;i--){
+//   console.log(i);
+// }
 
 //33. Affiche les nombres de 1 à 20 avec « pair » ou « impair » à côté de chacun.
+for(let i=1;i<=20;i++){
+if(i%2===0){
+  console.log (`Le nombre ${i} est pair`);
+}else{
+  console.log(`Le nombre ${i} est impair`);
+}
+}
 
 //34. Demande un nombre et affiche sa table de multiplication (« 7 x 1 = 7 »… jusqu'à 10).
+const nombre =Number(prompt("Donnez moi un nombre ?"));
+
+
 //35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
 //36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
 //37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
