@@ -604,19 +604,43 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 
 //35. Calcule la somme des nombres de 1 à 100 avec total += i. Tu dois trouver 5050.
 
-function somme(max) {
-  let total = 0;
+// function somme(max) {
+//   let total = 0;
 
-  for (let i = 1; i <= max; i++) {
-   total += i;
-  }
-  return total;
-}
-console.log(somme(100));
-console.log(somme(50));
+//   for (let i = 1; i <= max; i++) {
+//     total += i;
+//   }
+//   return total;
+// }
+// console.log(somme(100));
+// console.log(somme(50));
 
 //36. Compte à rebours avec while : de 10 à 0, puis « Décollage ! ».
+// let compteur= 10;
+// while(compteur>=0){
+//   console.log(compteur);
+//   compteur--;
+//  }
+//  console.log("Décollage !");
+
 //37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
+//Ajout consigne: mets la boucle dans une fonction compterVoyelle(mot) qui renvoie le nombre de voyelles avec return
+
+const voyelle = ["a", "e", "i", "o", "u", "y"];
+
+function compterVoyelle(mot) {
+  let compteur = 0;
+
+  for (let i = 0; i < mot.length; i++) {
+    if (voyelle.includes(mot[i])) {
+      compteur++;
+    }
+  }
+  return compteur;
+}
+console.log(compterVoyelle("sauvage"));
+
+
 //38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
 //39. FizzBuzz : de 1 à 30, affiche « Fizz » si le nombre est divisible par 3, « Buzz » par 5, « FizzBuzz » par les deux, sinon le nombre.
 //40. Le juste prix : l'ordinateur choisit un nombre entre 1 et 100 (Math.floor(Math.random() * 100) + 1). L'utilisateur propose des nombres avec prompt et l'alerte répond « plus grand » ou « plus petit ». À la fin, affiche « Bravo Prénom, trouvé en X essais » (compteur avec ++).
