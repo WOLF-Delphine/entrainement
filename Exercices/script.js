@@ -626,20 +626,32 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //37. Demande un mot et compte ses voyelles en parcourant chaque lettre (mot[i]) avec un compteur.
 //Ajout consigne: mets la boucle dans une fonction compterVoyelle(mot) qui renvoie le nombre de voyelles avec return
 
-const voyelle = ["a", "e", "i", "o", "u", "y"];
+// const voyelle = ["a", "e", "i", "o", "u", "y"];
 
-function compterVoyelle(mot) {
-  let compteur = 0;
+// function compterVoyelle(mot) {
+//   let compteur = 0;
 
-  for (let i = 0; i < mot.length; i++) {
-    if (voyelle.includes(mot[i])) {
-      compteur++;
-    }
+//   for (let i = 0; i < mot.length; i++) {
+//     if (voyelle.includes(mot[i])) {
+//       compteur++;
+//     }
+//   }
+//   return compteur;
+// }
+// console.log(compterVoyelle("sauvage"));
+
+// EXERCICE T1 :Ecrire une fonction somme(max) qui calcul la somme de tous les nombres de 1 a max et qui renvoie le total avec return essayer 
+//avec max 100 et 50
+function somme(max){
+  compteur = 0;
+  console.log(compteur);
+  for(let i=1; i<=max; i++){
+    compteur+=i;        //revient au même que compteur=compteur + i
   }
   return compteur;
 }
-console.log(compterVoyelle("sauvage"));
-
+console.log(somme(100));
+console.log(somme(50));
 
 //38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
 //39. FizzBuzz : de 1 à 30, affiche « Fizz » si le nombre est divisible par 3, « Buzz » par 5, « FizzBuzz » par les deux, sinon le nombre.
