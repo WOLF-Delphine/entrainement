@@ -640,20 +640,29 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 // }
 // console.log(compterVoyelle("sauvage"));
 
-// EXERCICE T1 :Ecrire une fonction somme(max) qui calcul la somme de tous les nombres de 1 a max et qui renvoie le total avec return essayer 
+// EXERCICE T1 :Ecrire une fonction somme(max) qui calcul la somme de tous les nombres de 1 a max et qui renvoie le total avec return essayer
 //avec max 100 et 50
-function somme(max){
-  compteur = 0;
-  console.log(compteur);
-  for(let i=1; i<=max; i++){
-    compteur+=i;        //revient au même que compteur=compteur + i
-  }
-  return compteur;
-}
-console.log(somme(100));
-console.log(somme(50));
+// function somme(max) {
+//   compteur = 0;
+//   console.log(compteur);
+//   for (let i = 1; i <= max; i++) {
+//     compteur += i; //revient au même que compteur=compteur + i
+//   }
+//   return compteur;
+// }
+// console.log(somme(100));
+// console.log(somme(50));
 
-//38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. Utilise-la pour dire si un mot est un palindrome (« kayak »).
+//38. Crée une fonction inverser(mot) qui renvoie le mot à l'envers en parcourant les lettres avec i--. 
+// Utilise-la pour dire si un mot est un palindrome (« kayak »).
+
+function inverser(mot){
+for (let i=mot.length -1;i<mot.length;i--){
+
+}
+return 
+}
+console.log(inverser(kayak));
 //39. FizzBuzz : de 1 à 30, affiche « Fizz » si le nombre est divisible par 3, « Buzz » par 5, « FizzBuzz » par les deux, sinon le nombre.
 //40. Le juste prix : l'ordinateur choisit un nombre entre 1 et 100 (Math.floor(Math.random() * 100) + 1). L'utilisateur propose des nombres avec prompt et l'alerte répond « plus grand » ou « plus petit ». À la fin, affiche « Bravo Prénom, trouvé en X essais » (compteur avec ++).
 //*/
