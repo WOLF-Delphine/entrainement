@@ -657,14 +657,52 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //-----------------------------------------------------------------------------------------------------------------------------------------
 
 //EXERCICE T2 : Crée sommePaires(max) qui additionne seulement les nombres pairs de 1 à max
-function sommePaires(max) {
-  let tirelire = 0;
-  for (let i = 1; i <= max; i++) {
-    if (i % 2 === 0) {
-      tirelire = tirelire + i;
-      
-    }
-  }
-  return tirelire;
+// function sommePaires(max) {
+//   let tirelire = 0;
+//   for (let i = 1; i <= max; i++) {
+//     if (i % 2 === 0) {
+//       tirelire = tirelire + i;
+
+//     }
+//   }
+//   return tirelire;
+// }
+// console.log(sommePaires(10));
+
+//EXERCICE ANGELA YU : LIFE IN WEEKS
+//Fonction lifeInWeeks(age) : on  vit jusqu'a 90 ans.
+//Calculer les jours, semaines et mois qui restent
+//(365 jours, 52 semaines, 12 mois par an)
+//Afficher: il te reste x jours, y semaines et z mois
+//test avec 56 ans: 12410 jours, 1768 semaines, 408 mois.
+function lifeInWeeks(age){
+const fin = 90;
+const jours =365;
+const semaines = 52;
+const mois =12;
+
+const resteAnnee= (fin-age);
+console.log(resteAnnee);
+const joursRestant= (resteAnnee *jours);
+console.log(joursRestant);
+const semaineRestante = (resteAnnee*semaines);
+console.log(semaineRestante);
+const moisRestant=(resteAnnee*mois);
+console.log(moisRestant);
+console.log(`Il te reste ${joursRestant} jours, ${semaineRestante} semaines et ${moisRestant} mois`);
 }
-console.log(sommePaires(10));
+lifeInWeeks(56);
+
+
+//EXERCICE ANGELA YU : IMC
+//Fonction bmiCalculator(weight,height) :
+//Renvoyer (return) le poids divisé par la taille au carré.
+//Puis afficher le résultat avec console.log()
+//Test 65 kg et 1.8 m environ 20.06
+
+function bmiCalculator(weight,height){
+let calcul= weight/(height*height);
+return calcul.toFixed(2);
+
+}
+console.log(bmiCalculator(65,1.8));
