@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./images/famille.webp");
+  background-size: cover; /* l'image couvre tout l'écran */
+  background-position: center;
+  background-repeat: no-repeat; /* pas de répétition en mosaïque */
+  min-height: 100vh; /* le body fait au moins la hauteur de l'écran */
+}
+
+.principal-title {
+  background-color: #d2c4b490;
+ }
+h1 {
+  text-align:center;
+  font-size: 64px;
+  color: #f6f4e8;
+  padding: 10px;
+}
+input {
+  width: 100%;
+  max-width: 600px; /* 600px max, mais rétrécit sur téléphone */
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 32px;
+}
+.tirage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+button{
+  padding: 16px 56px;
+  font-size: 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #CE4F2F;
+}
+.cadre-photo {
+  width: 300px;
+  height: 300px;
+  margin: 10vh auto 24px;           /* espace au-dessus et centrage horizontal */
+  border: 16px solid #d2c4b4;
+  border-radius: 16px;
+  background-color: #d2c4b490; /* même fond transparent que ton titre */
+  overflow: hidden;            /* la photo ne dépasse pas des coins arrondis */
+}
+
+.cadre-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* remplit la case sans déformer la photo */
+}

@@ -1,15 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qui fait la vaisselle ?</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./vaisselle.css" />
+  </head>
+  <body>
     <main>
+      <div class="principal-title">
         <h1>Qui fait la vaisselle ?</h1>
+      </div>
+      <div class="tirage">
+        <input type="text" name="random-choise" id="choise" aria-label="Personne qui fait la vaisselle" readonly />
+        <button type="button">Go !</button>
+      </div>
+      <div class="cadre-photo">
+        <img id="photo" src="" alt="" hidden />
+      </div>
     </main>
-   
+
     <script src="./vaisselle.js"></script>
-</body>
+  </body>
 </html>

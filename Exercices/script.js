@@ -675,25 +675,25 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //(365 jours, 52 semaines, 12 mois par an)
 //Afficher: il te reste x jours, y semaines et z mois
 //test avec 56 ans: 12410 jours, 1768 semaines, 408 mois.
-function lifeInWeeks(age) {
-  const fin = 90;
-  const jours = 365;
-  const semaines = 52;
-  const mois = 12;
+// function lifeInWeeks(age) {
+//   const fin = 90;
+//   const jours = 365;
+//   const semaines = 52;
+//   const mois = 12;
 
-  const resteAnnee = fin - age;
-  console.log(resteAnnee);
-  const joursRestant = resteAnnee * jours;
-  console.log(joursRestant);
-  const semaineRestante = resteAnnee * semaines;
-  console.log(semaineRestante);
-  const moisRestant = resteAnnee * mois;
-  console.log(moisRestant);
-  console.log(
-    `Il te reste ${joursRestant} jours, ${semaineRestante} semaines et ${moisRestant} mois`,
-  );
-}
-lifeInWeeks(56);
+//   const resteAnnee = fin - age;
+//   console.log(resteAnnee);
+//   const joursRestant = resteAnnee * jours;
+//   console.log(joursRestant);
+//   const semaineRestante = resteAnnee * semaines;
+//   console.log(semaineRestante);
+//   const moisRestant = resteAnnee * mois;
+//   console.log(moisRestant);
+//   console.log(
+//     `Il te reste ${joursRestant} jours, ${semaineRestante} semaines et ${moisRestant} mois`,
+//   );
+// }
+// lifeInWeeks(56);
 
 //EXERCICE ANGELA YU : IMC
 //Fonction bmiCalculator(weight,height) :
@@ -701,26 +701,37 @@ lifeInWeeks(56);
 //Puis afficher le résultat avec console.log()
 //Test 65 kg et 1.8 m environ 20.06
 
-function bmiCalculator(weight, height) {
-  let calcul = weight / (height * height);
-  return calcul.toFixed(2);
-}
-console.log(bmiCalculator(65, 1.8));
+// function bmiCalculator(weight, height) {
+//   let calcul = weight / (height * height);
+//   return calcul.toFixed(2);
+// }
+// console.log(bmiCalculator(65, 1.8));
 
 //EXERCICE T3 : compterPairs(max)
 //Fonction compterPairs(max): compter combien il y a de nombres pairs entre 1 et max et renvoyer ce nombre
 //Afficher le résultat avec console.log()
 //test : compterPairs(10)
 
-function compterPairs(max) {
-  compteur = 0;
-  //console.log("compteur de depart " + compteur);
-  for (let i = 1; i <= max; i++) {
-    if (i % 2 === 0) {
-    compteur++;
-      //console.log("compteur incrémenté" + compteur)
-    }
-  }
-  return compteur;
-}
+// function compterPairs(max) {
+//   compteur = 0;
+//   //console.log("compteur de depart " + compteur);
+//   for (let i = 1; i <= max; i++) {
+//     if (i % 2 === 0) {
+//     compteur++;
+//       //console.log("compteur incrémenté" + compteur)
+//     }
+//   }
+//   return compteur;
+// }
 //console.log("Ce nombre est bien pair: divisé par 2 cela donne "+ (compterPairs(10)));
+
+//Deuxiémé essai: Inverser mot essai sans regarder
+function inverseMot(mot){
+  let recupereMot ="";
+  for(let i=mot.length-1;i>=0;i--){
+    recupereMot= recupereMot + mot[i];
+  }
+  return recupereMot;
+}
+console.log(inverseMot("refuge"));
+  
