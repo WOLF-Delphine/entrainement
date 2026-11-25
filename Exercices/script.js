@@ -726,12 +726,25 @@ Rappel. Incrémenter, c'est augmenter une variable ; décrémenter, c'est la dim
 //console.log("Ce nombre est bien pair: divisé par 2 cela donne "+ (compterPairs(10)));
 
 //Deuxiémé essai: Inverser mot essai sans regarder
-function inverseMot(mot){
-  let recupereMot ="";
-  for(let i=mot.length-1;i>=0;i--){
-    recupereMot= recupereMot + mot[i];
-  }
-  return recupereMot;
-}
-console.log(inverseMot("refuge"));
+// function inverseMot(mot){
+//   let recupereMot ="";
+//   for(let i=mot.length-1;i>=0;i--){
+//     recupereMot= recupereMot + mot[i];
+//   }
+//   return recupereMot;
+// }
+// console.log(inverseMot("refuge"));
   
+
+//EXERCICE T4: Le panier de courses
+const prix=[16.5,8,76,24,3,16,28,43];
+
+function totaPanier(prix){
+  let total= 0;
+
+  for(let i=0;i<prix.length;i++){
+    total= total + prix[i];
+  }
+  return total;
+}
+console.log(totaPanier(prix));
